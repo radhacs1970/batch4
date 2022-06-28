@@ -1,0 +1,31 @@
+Write a program to find whether a given number is prime number or not
+Write a program to find whether from list of input number, which number is greater
+Draw the pattern, given number of stars as follows:
+*
+**
+***
+**
+*
+
+1.  Create a class Training 
+  a, write a method dispTraining that takes trainingname as argument and prints the same.
+  b, write a method dispTraining that takes student name and technology and 
+        prints the "Welcome " + Studentname + " to the technology " + tech
+  c, write a method static dispTraining that displays the count of students
+
+2. Create a class InternalTraining
+  with name of trainee, technology and numofDays.
+  Create a no arg constructor and initialize it with xxx, abcd, 1
+  Create a 2 arg constructor with trainee and technology  
+  Create a 3 arg constructor for all attribute
+
+28-June-2022
+1. Create a class Exam with attribute exam name, maximum mark, difficuly level , passmark.
+Create a constructor to get all attributes
+compare two exam objects and display ' They are same' , or 'They are Not same'
+display the attribute values using toString method.
+Also write the getter and setter methods for the attributes
+
+
+
+  
