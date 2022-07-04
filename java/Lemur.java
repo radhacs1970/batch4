@@ -1,4 +1,4 @@
 
-public class Lemur  extends Lion{
+public class Lemur {
 
 }
