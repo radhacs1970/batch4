@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Customer.java</title>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/>
+  <link rel='stylesheet' type='text/css' href='../../coverage.css'/>
+  <link rel='shortcut icon' type='image/png' href='../../logo.png'/>
+  <script type='text/javascript' src='../../coverage.js'></script>
+  <script type='text/javascript' src='../../prettify.js'></script>
+</head>
+<body onload='prettyPrint()'>
+  <table cellpadding='0' cellspacing='1'>
+    <caption>demotest\src\main\java\com\hexa\Customer.java</caption>
+    <tr>
+      <td class='line'>1</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>package com.hexa;</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td><pre class='imports prettyprint' onclick='showHideLines(this)'><div>import java.util.Objects;
+</div><span>import ...</span></pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>5</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>public class Customer {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>6</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  String <span class='instance covered' title='Reads: 18 Writes: 9'>custName</span>;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>7</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  int <span class='instance covered' title='Reads: 7 Writes: 9'>custWallet</span>;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>8</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  String <span class='instance covered' title='Reads: 27 Writes: 9'>custEmail</span>;</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>10</td><td class='count'>8</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l10s0'>  public Customer(String custName, int custWallet, String custEmail) {</pre>
+        <ol style='display:none'>
+          <li>com.hexa.CustomerTest#testCustomerEquals: 39, 40, 42, 43, 44, 46, 47</li>
+          <li>com.hexa.CustomerTest#testCustomerObject: 29</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>11</td><td class='count'>8</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l11s0'>    this.custName = custName;</pre>
+        <ol style='display:none'>
+          <li>com.hexa.CustomerTest#testCustomerEquals: 39, 40, 42, 43, 44, 46, 47</li>
+          <li>com.hexa.CustomerTest#testCustomerObject: 29</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>12</td><td class='count'>8</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l12s0'>    this.custWallet = custWallet;</pre>
+        <ol style='display:none'>
+          <li>com.hexa.CustomerTest#testCustomerEquals: 39, 40, 42, 43, 44, 46, 47</li>
+          <li>com.hexa.CustomerTest#testCustomerObject: 29</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>13</td><td class='count'>8</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l13s0'>    this.custEmail = custEmail;</pre>
+        <ol style='display:none'>
+          <li>com.hexa.CustomerTest#testCustomerEquals: 39, 40, 42, 43, 44, 46, 47</li>
+          <li>com.hexa.CustomerTest#testCustomerObject: 29</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>14</td><td class='count'>8</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l14s0'>  }</pre>
+        <ol style='display:none'>
+          <li>com.hexa.CustomerTest#testCustomerEquals: 39, 40, 42, 43, 44, 46, 47</li>
+          <li>com.hexa.CustomerTest#testCustomerObject: 29</li>
+        </ol>
+      </td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>16</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l16s0'>  public Customer() {</pre>
+        <ol style='display:none'>
+          <li>com.hexa.CustomerTest#testCustomerObject: 14</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>17</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l17s0'>  }</pre>
+        <ol style='display:none'>
+          <li>com.hexa.CustomerTest#testCustomerObject: 14</li>
+        </ol>
+      </td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>19</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  public String getCustName() {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>20</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l20s0'>    return custName;</pre>
+        <ol style='display:none'>
+          <li>com.hexa.CustomerTest#testCustomerObject: 19</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>21</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  }</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>23</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  public void setCustName(String custName) {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>24</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l24s0'>    this.custName = custName;</pre>
+        <ol style='display:none'>
+          <li>com.hexa.CustomerTest#testCustomerObject: 18</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>25</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l25s0'>  }</pre>
+        <ol style='display:none'>
+          <li>com.hexa.CustomerTest#testCustomerObject: 18</li>
+        </ol>
+      </td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>27</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  public int getCustWallet() {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>28</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l28s0'>    return custWallet;</pre>
+        <ol style='display:none'>
+          <li>com.hexa.CustomerTest#testCustomerObject: 27</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>29</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  }</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>31</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  public void setCustWallet(int custWallet) {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>32</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l32s0'>    this.custWallet = custWallet;</pre>
+        <ol style='display:none'>
+          <li>com.hexa.CustomerTest#testCustomerObject: 26</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>33</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l33s0'>  }</pre>
+        <ol style='display:none'>
+          <li>com.hexa.CustomerTest#testCustomerObject: 26</li>
+        </ol>
+      </td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>35</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  public String getCustEmail() {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>36</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l36s0'>    return custEmail;</pre>
+        <ol style='display:none'>
+          <li>com.hexa.CustomerTest#testCustomerObject: 23</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>37</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  }</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>39</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  public void setCustEmail(String custEmail) {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>40</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l40s0'>    this.custEmail = custEmail;</pre>
+        <ol style='display:none'>
+          <li>com.hexa.CustomerTest#testCustomerObject: 22</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>41</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l41s0'>  }</pre>
+        <ol style='display:none'>
+          <li>com.hexa.CustomerTest#testCustomerObject: 22</li>
+        </ol>
+      </td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>43</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  @Override</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>44</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  public int hashCode() {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>45</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    int result;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>46</td><td class='count'>0</td>
+      <td><pre class='prettyprint uncovered' id='l46s0'>    result = Objects.hash(custName,custWallet,custEmail);</pre>
+        <ol style='display:none'></ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>47</td><td class='count'>0</td>
+      <td><pre class='prettyprint uncovered' id='l47s0'>    return result;</pre>
+        <ol style='display:none'></ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>48</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  }</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>50</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  @Override</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>51</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  public boolean equals(Object obj) {</pre></td>
+    </tr>
+    <tr>
+      <td></td><td class='count'>12</td>
+      <td class='paths'>
+        <span style='cursor:default; background-color:#788700' onclick='hidePath()'>Path coverage: 9/17</span>
+        <span class='covered' onclick="showPath(this,'l52s0 l53s0')">A: 1</span>
+        <span class='covered' onclick="showPath(this,'l52s0 l54s0 l55s0')">B: 1</span>
+        <span class='covered' onclick="showPath(this,'l52s0 l54s0 l56s0 l57s0')">C: 1</span>
+        <span class='covered' onclick="showPath(this,'l52s0 l54s0 l56s0 l58s0 l59s0 l60s0 l61s0')">D: 1</span>
+        <span class='covered' onclick="showPath(this,'l52s0 l54s0 l56s0 l58s0 l59s0 l62s0 l63s0')">E: 2</span>
+        <span class='covered' onclick="showPath(this,'l52s0 l54s0 l56s0 l58s0 l59s0 l62s0 l64s0 l65s0 l66s0')">F: 1</span>
+        <span class='uncovered' onclick="showPath(this,'l52s0 l54s0 l56s0 l58s0 l59s0 l60s0 l64s0 l65s0 l66s0')">G: 0</span>
+        <span class='covered' onclick="showPath(this,'l52s0 l54s0 l56s0 l58s0 l59s0 l62s0 l64s0 l67s0 l68s0')">H: 2</span>
+        <span class='uncovered' onclick="showPath(this,'l52s0 l54s0 l56s0 l58s0 l59s0 l60s0 l64s0 l67s0 l68s0')">I: 0</span>
+        <span class='covered' onclick="showPath(this,'l52s0 l54s0 l56s0 l58s0 l59s0 l62s0 l64s0 l67s0 l69s0 l70s0')">J: 1</span>
+        <span class='uncovered' onclick="showPath(this,'l52s0 l54s0 l56s0 l58s0 l59s0 l62s0 l64s0 l65s0 l69s0 l70s0')">K: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l52s0 l54s0 l56s0 l58s0 l59s0 l60s0 l64s0 l67s0 l69s0 l70s0')">L: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l52s0 l54s0 l56s0 l58s0 l59s0 l60s0 l64s0 l65s0 l69s0 l70s0')">M: 0</span>
+        <span class='covered' onclick="showPath(this,'l52s0 l54s0 l56s0 l58s0 l59s0 l62s0 l64s0 l67s0 l69s0 l71s0')">N: 2</span>
+        <span class='uncovered' onclick="showPath(this,'l52s0 l54s0 l56s0 l58s0 l59s0 l62s0 l64s0 l65s0 l69s0 l71s0')">O: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l52s0 l54s0 l56s0 l58s0 l59s0 l60s0 l64s0 l67s0 l69s0 l71s0')">P: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l52s0 l54s0 l56s0 l58s0 l59s0 l60s0 l64s0 l65s0 l69s0 l71s0')">Q: 0</span>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>52</td><td class='count'>12</td>
+      <td><pre class='prettyprint jmp'>    <span id='l52s0' title='Executions: 12' class='covered cp' onclick='showHide(this,0)'>if (this == obj)</span></pre>
+        <ol style='display:none'>
+          <li>com.hexa.CustomerTest#testCustomerEquals: 52, 53, 54, 56, 57, 58, 59, 60, 61, 63</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>53</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l53s0'>      return true;</pre>
+        <ol style='display:none'>
+          <li>com.hexa.CustomerTest#testCustomerEquals: 52</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>54</td><td class='count'>11</td>
+      <td><pre class='prettyprint jmp'>    <span id='l54s0' title='Executions: 11' class='covered cp' onclick='showHide(this,0)'>if (obj == null)</span></pre>
+        <ol style='display:none'>
+          <li>com.hexa.CustomerTest#testCustomerEquals: 53, 54, 56, 57, 58, 59, 60, 61, 63, 64</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>55</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l55s0'>      return false;</pre>
+        <ol style='display:none'>
+          <li>com.hexa.CustomerTest#testCustomerEquals: 53</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>56</td><td class='count'>10</td>
+      <td><pre class='prettyprint jmp'>    <span id='l56s0' title='Executions: 10' class='covered cp' onclick='showHide(this,0)'>if (getClass() != obj.getClass())</span></pre>
+        <ol style='display:none'>
+          <li>com.hexa.CustomerTest#testCustomerEquals: 54, 56, 57, 58, 59, 60, 61, 63, 64</li>
+          <li>com.hexa.CustomerTest#testCustomerObject: 30</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>57</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l57s0'>      return false;</pre>
+        <ol style='display:none'>
+          <li>com.hexa.CustomerTest#testCustomerEquals: 54</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>58</td><td class='count'>9</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l58s0'>    Customer other = (Customer) obj;</pre>
+        <ol style='display:none'>
+          <li>com.hexa.CustomerTest#testCustomerEquals: 56, 57, 58, 59, 60, 61, 63, 64</li>
+          <li>com.hexa.CustomerTest#testCustomerObject: 30</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>59</td><td class='count'>9</td>
+      <td><pre class='prettyprint jmp'>    <span id='l59s0' title='Executions: 9' class='covered cp' onclick='showHide(this,0)'>if (custEmail == null)</span> {</pre>
+        <ol style='display:none'>
+          <li>com.hexa.CustomerTest#testCustomerEquals: 56, 57, 58, 59, 60, 61, 63, 64</li>
+          <li>com.hexa.CustomerTest#testCustomerObject: 30</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>60</td><td class='count'>1</td>
+      <td><pre class='prettyprint jmp'>      <span id='l60s0' title='Executions: 1' class='covered cp' onclick='showHide(this,0)'>if (other.custEmail != null)</span></pre>
+        <ol style='display:none'>
+          <li>com.hexa.CustomerTest#testCustomerEquals: 63</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>61</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l61s0'>        return false;</pre>
+        <ol style='display:none'>
+          <li>com.hexa.CustomerTest#testCustomerEquals: 63</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>62</td><td class='count'>8</td>
+      <td><pre class='prettyprint jmp'>    <span id='l62s0' title='Executions: 8' class='covered cp' onclick='showHide(this,0)'>}</span> else if (!custEmail.equals(other.custEmail))</pre>
+        <ol style='display:none'>
+          <li>com.hexa.CustomerTest#testCustomerEquals: 56, 57, 58, 59, 60, 61, 64</li>
+          <li>com.hexa.CustomerTest#testCustomerObject: 30</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>63</td><td class='count'>2</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l63s0'>      return false;</pre>
+        <ol style='display:none'>
+          <li>com.hexa.CustomerTest#testCustomerEquals: 57, 60</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>64</td><td class='count'>6</td>
+      <td><pre class='prettyprint jmp'>    <span id='l64s0' title='Executions: 6' class='covered cp' onclick='showHide(this,0)'>if (custName == null)</span> {</pre>
+        <ol style='display:none'>
+          <li>com.hexa.CustomerTest#testCustomerEquals: 56, 58, 59, 61, 64</li>
+          <li>com.hexa.CustomerTest#testCustomerObject: 30</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>65</td><td class='count'>1</td>
+      <td><pre class='prettyprint jmp'>      <span id='l65s0' title='Executions: 1' class='covered cp' onclick='showHide(this,0)'>if (other.custName != null)</span></pre>
+        <ol style='display:none'>
+          <li>com.hexa.CustomerTest#testCustomerEquals: 64</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>66</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l66s0'>        return false;</pre>
+        <ol style='display:none'>
+          <li>com.hexa.CustomerTest#testCustomerEquals: 64</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>67</td><td class='count'>5</td>
+      <td><pre class='prettyprint jmp'>    <span id='l67s0' title='Executions: 5' class='covered cp' onclick='showHide(this,0)'>}</span> else if (!custName.equals(other.custName))</pre>
+        <ol style='display:none'>
+          <li>com.hexa.CustomerTest#testCustomerEquals: 56, 58, 59, 61</li>
+          <li>com.hexa.CustomerTest#testCustomerObject: 30</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>68</td><td class='count'>2</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l68s0'>      return false;</pre>
+        <ol style='display:none'>
+          <li>com.hexa.CustomerTest#testCustomerEquals: 58, 61</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>69</td><td class='count'>3</td>
+      <td><pre class='prettyprint jmp'>    <span id='l69s0' title='Executions: 3' class='covered cp' onclick='showHide(this,0)'>if (custWallet != other.custWallet)</span></pre>
+        <ol style='display:none'>
+          <li>com.hexa.CustomerTest#testCustomerEquals: 56, 59</li>
+          <li>com.hexa.CustomerTest#testCustomerObject: 30</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>70</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l70s0'>      return false;</pre>
+        <ol style='display:none'>
+          <li>com.hexa.CustomerTest#testCustomerEquals: 59</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>71</td><td class='count'>2</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l71s0'>    return true;</pre>
+        <ol style='display:none'>
+          <li>com.hexa.CustomerTest#testCustomerEquals: 56</li>
+          <li>com.hexa.CustomerTest#testCustomerObject: 30</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>72</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  }</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>77</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>}</pre></td>
+    </tr>
+  </table>
+</body>
+</html>
