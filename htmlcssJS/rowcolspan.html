@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<htm>
+  <head>
+    <title> row col span</title>
+    <style>
+      table, tr,th,td {
+         
+         margin-left: 100px;
+         margin-top: 50px;
+         margin-right: 100px;
+         margin-bottom: 75px;
+         border : 1px solid blue;
+         padding: 5px;
+       }
+    </style>
+  </head>
+  <body>
+      Row column spanning <br>
+    <table>
+      <tr>
+        <th>Heading One</th>
+        <th>Heading Two</th>
+        <th>Heading Three</th>
+        <th>Heading Four</th>
+      </tr>
+      <tr>
+        <td>Row 1 Co1 1 </td>
+        <td colspan = "2" >Row 1 Co1 2   Row 1 Co1 3 </td>
+         
+        <td>Row 1 Co1 4 </td>
+      </tr>
+      <tr>
+        <td>Row 2 Co1 1 </td>
+        <td rowspan="2" colspan = "2"> 
+          Row 2 Co1 2   Row 2 Co1 3 
+          <br>
+          Row 3 Co1 2 Row 3 Co1 3
+        </td>
+        <td>Row 2 Co1 4 </td>
+      </tr>
+      <tr>
+        <td rowspan="2">Row 3 Co1 1 <br> Row 4 Co1 1  </td>
+        <td>Row 3 Co1 4 </td>
+      </tr>
+      <tr>
+        <td>Row 4 Co1 2 </td>
+        <td>Row 4 Co1 3 </td>
+        <td>Row 4 Co1 4 </td>
+      </tr>
+    </table>
+    <div>
+      <img src="rupees.jpg" alt="file not found" style="opacity: 50%;"
+      width="250px" height="250px"/>
+    </div>
+  </body>
+</html>
