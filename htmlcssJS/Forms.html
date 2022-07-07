@@ -1,0 +1,72 @@
+<html>
+  <head>
+    <title>Forms example</title>
+    <style>
+      form {
+        margin: 10px;
+      }
+      </style>
+  </head>
+  <body>
+    <h1>Forms Example</h1>
+    <div style="margin: 10px; border: 3px solid grey;">
+      <form  name="myForm" 
+          action="Thankyou.html" 
+          method="post"  >
+      <fieldset>
+        <legend>Personal info:</legend>
+        <label for="uname">Enter User Name : 
+          <input type="text" name="uname" id="uname" 
+              placeholder="Enter your name Ex: Radha"
+              value=""   required minlength="3" maxlength="20" 
+              autofocus > 
+          </label>
+        <br><br>
+
+        <label for="upassword">Enter password : </label>
+        <input type="password" name="upassword"  
+            value=""  required placeholder="Enter your password" > <br><br>
+      
+        <label for="uemail">Enter Email : </label>
+        <input type="email" name="uemail" value=""> <br><br>
+      </fieldset><br>
+        <label for="color">Choose Your Favorite Color:  </label><br>
+        <input type="radio" name="color" value="red" checked> RED <br>
+        <input type="radio" name="color" value="green"> GREEN <br>
+        <input type="radio" name="color" value="blue">  BLUE <br><br>
+        
+        <label>Enter Your Skill Set : </label><br>
+        <input type="checkbox" name="Skill" value="java"> java 8 <br>
+        <input type="checkbox" name="Skill" value="dotnet"> dot net <br>
+        <input type="checkbox" name="Skill" value="angular"> Angular 10 <br><br>
+
+        <label>Enter the Car Name : </label>
+        <select name="car">
+          <optgroup label="Luxury Cars">
+            <option value="Lamborgini"> Lamborgini </option>
+            <option value="BMW"> BMW </option>
+            <option value="mercedes">Mercedes</option>
+          </optgroup>
+          <optgroup label="Passenger Cars">
+            <option value="Desire">Desire</option>
+            <option value="Swift">Swift</option>          
+            <option value="Celerio">Celerio</option>
+          </optgroup> 
+        </select> <br><br>
+
+        <label for="datemax">Enter a date :</label>
+        <input type="date" id="datemax" name="datemax"  required min="2022-07-01"><br><br>
+
+
+        <label for="comments">Comments :</label>
+        <textarea rows="4" cols="50" name="comments" placeholder="Enter your comments"></textarea><br><br>
+        <input type="Submit" name="submit" value="Submit Now"> 
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        <input type="reset" name="reset" value="clear the details">  
+       <br><br>
+       
+      
+      </form>
+    </div>
+  </body>
+</html>

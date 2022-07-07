@@ -1,0 +1,29 @@
+Create a Html file  that displays
+body with background color as gray and relavant margins and padding to
+text
+In the sample file add three para
+and make default font height for all para as 30px
+for one para make it 20px
+and for two para using internal style set the color to blue
+Also add a example orderedlist unordered list of colors
+and create a table 
+span 3 first rows and 2 columns
+and span 1 and 2 column of 4th rows
+Also add image and set the width and height to 100px
+Apply the formats sub, sup, em, i, bold etc in any para
+
+2.
+
+Create Web page that has the header "Canteen Management System"
+and footer with copyright
+Add menu that displays food, customer,  place order
+When food menu is displayed in a table right or below the menu
+display all the food details
+When customer menu is selected by the user, 
+  display the customer details and below a form to get the customer details
+  on submit of the form confirm the submission
+
+  display a place order menu choose a food item using check box
+  add a qty to it and show the total cost if possible
+
+   

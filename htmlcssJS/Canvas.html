@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+        Canvas demo
+    </title>
+  </head>
+  <body>
+    <canvas id="myCanvas" width="300" height="100" 
+      style="border:2px solid;">  
+        This message will be displayed if canvas is not supported 
+    </canvas>
+    <script>
+      var c = document.getElementById("myCanvas");
+      var ctx = c.getContext("2d");
+      ctx.fillStyle="#FF0000";
+      ctx.fillRect(0,0,150,100);
+      ctx.moveTo(150,50);
+      ctx.lineTo(300,50);
+      ctx.stroke();
+    </script>
+      <canvas id="myCanvas2" width="300" height="100" 
+      style="border:2px solid;">  
+      This message will be displayed if canvas is not supported 
+      </canvas>
+      <script>
+      var c = document.getElementById("myCanvas2");
+      var ctx = c.getContext("2d");
+      ctx.beginPath();
+      ctx.arc(150,50,40,0,90);
+      ctx.stroke();
+      ctx.font="12px Arial";
+      ctx.strokeText(" Hello ", 10, 25 ) 
+      </script>
+    </body>
+    </html>
