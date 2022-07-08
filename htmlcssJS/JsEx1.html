@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+  <h1> Learning Java script </h1>
+  <script>
+    alert("welcome to jS Learning");
+    var ret = confirm( " Are you sure you want to continue");
+    if ( ret == true){
+      document.write("<h3> User CONFIRMS TO CONTINUE....</h3>");
+
+      var myname = prompt("Enter your name : ");
+      if ( myname != null ) {
+        document.write( "<h3> my name is " + myname 
+                + " " + " type of myname is " + typeof myname + 
+                  " </h3>");
+      }
+    } else {
+      document.write("<h3> User says STOP....</h3>");
+    }
+    // Now the fun !!!!
+    alert ( '1'+2);   //12
+    alert ( 2 + '1'); //21
+    alert ( 2 +2 + '1'); //41
+    alert('1' + 2+ 2); //122
+    alert ( 6 -'2'); //4
+    alert('6' / '2');//3
+    let apple = '2';
+    let orange = '3';
+    alert ( apple + orange); //23
+    alert (+apple + +orange);  //5
+    
+    alert ( '2' > 1); // true
+    alert ( '01' == 1); //true
+    alert ( true == 1); // true
+    alert ( false == 0); //true
+    let a = 0;
+    alert ( Boolean(a)); //false
+
+  </script>
+</body>
+
+</html>

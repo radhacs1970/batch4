@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script>
+    function changepic() {
+      document.getElementById("imgM").src = "rupees.jpg";
+    }
+    function outpic() {
+      document.getElementById("imgM").src = "gold1.jpg";
+    }
+    function sayHello() {
+      //alert ( " hello all");
+      window.open("https://www.google.com");
+
+    }
+    function showfocus() {
+      document.getElementById("myresult").innerHTML = " Focus in password"
+    }
+    function changevalue(){
+        let text1 = document.getElementsByName('uname')[0].value;
+        
+        alert(text1 );
+    }
+  </script>
+</head>
+
+<body>
+  <h2> Mouse over example...</h2>
+  <img id="imgM" src="gold1.jpg" onmouseover="changepic()" onmouseout="outpic()" />
+
+  <hr>
+  <form>
+    <fieldset>
+      <legend>Personal info:</legend>
+      <label>Enter User Name :
+        <input type="text" name="uname" 
+          placeholder="Enter your name" 
+          value="Megna" required minlength="3" maxlength="20"
+          autofocus onblur="alert('losing focus')"
+          onchange="changevalue()">
+      </label>
+      <br><br>
+
+      <label>Enter password :
+        <input type="password" name="upassword" value="" 
+          placeholder="Enter your password" onfocus="showfocus();">
+        <br><br>
+      </label>
+    </fieldset><br>
+    <input type="button" onclick="sayHello()" value=" SAY HELLO " />
+  </form>
+  <hr>
+    <div id="myresult"></div>
+</body>

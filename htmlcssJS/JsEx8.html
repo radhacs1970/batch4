@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function getFormDetails(){
+        var msg;
+        var name=document.myForm.uname.value; 
+        var upassword=document.forms[0].upassword.value;
+        var uemail = document.myForm.uemail.value;
+        var ucolor = document.forms[0].color.value;
+        var markedCheckbox = document.getElementsByName('Skill');  
+        var carV = document.myForm.car.value;
+        var mydate = document.myForm.datemax.value;
+
+        msg = " name : " + name ; 
+         
+        msg = msg.concat( " password is " , upassword);
+        msg = msg.concat( " email is " , uemail);
+        msg = msg.concat( " color is " , ucolor);
+        msg = msg.concat( " skill is " );
+        for (var checkbox of markedCheckbox) {  
+          if (checkbox.checked) 
+            msg = msg.concat( checkbox.value, ' ');               
+        }  
+        msg = msg + " car is " + carV;
+        msg = msg + " \n date is " + mydate;
+        alert ( msg );
+        document.getElementById("myresult").innerHTML = msg;
+      }
+      function showfocus(){
+        document.getElementById("myresult").innerHTML = " Focus in password"
+      }
+      function duplicateData(key){
+        let val = document.getElementById("myresult").innerHTML ;
+        //var uemail = document.myForm.uemail.value;
+        document.getElementById("myresult").innerHTML = val + key;
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Forms Example</h1>
+    <div style="margin: 10px; border: 3px solid grey;">
+      <form  name="myForm"   method="POST" action="Thankyou.html">
+      <fieldset>
+        <legend>Personal info:</legend>
+        <label>Enter User Name : </label>
+        <input type="name" name="uname" placeholder="Enter your name"
+              value="" required minlength="3" maxlength="20" 
+                autofocus  onblur="alert('losing focus')"> 
+        
+        <br><br>
+
+        <label>Enter password : </label>
+        <input type="password" name="upassword"  
+        value=""  placeholder="Enter your password"  
+        onfocus="showfocus();"  > <br><br>
+      </fieldset><br>
+        <label>Enter Email : </label>
+        <input type="email" name="uemail" value="" onkeyup="duplicateData(event.key)"> <br><br>
+
+        <label>Choose Your Favorite Color:  </label><br>
+        <input type="radio" name="color" value="red" checked> RED <br>
+        <input type="radio" name="color" value="green"> GREEN <br>
+        <input type="radio" name="color" value="blue">  BLUE <br><br>
+        
+        <label>Enter Your Skill Set : </label><br>
+        <input type="checkbox" name="Skill" value="java"> java 8 <br>
+        <input type="checkbox" name="Skill" value="dotnet"> dot net <br>
+        <input type="checkbox" name="Skill" value="angular"> Angular 10 <br><br>
+
+        <label>Enter the Car Name : </label>
+        <select name="car" onchange="alert('onchange in select');">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
+        </select> <br><br>
+
+        <label for="datemax">Enter a date :</label>
+        <input type="date" id="datemax" name="datemax"><br><br>
+
+        <input type="button" name="submit" value="Submit Now" 
+        onclick="getFormDetails()"> 
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        <input type="reset" name="reset" value="clear the details">  
+       <br><br>
+      
+      </form>
+    </div>
+    <hr>
+    <div id="myresult"></div>
+  </body>
+</html>

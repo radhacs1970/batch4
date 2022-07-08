@@ -26,4 +26,4 @@ When customer menu is selected by the user,
   display a place order menu choose a food item using check box
   add a qty to it and show the total cost if possible
 
-   
+  

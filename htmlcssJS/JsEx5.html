@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <h1> Arrays</h1>
+    <p id="demo" style="background-color: yellow;"></p>
+    
+    <p id="mycar" style="background-color: gray; color:white"></p>
+    <p id="mycolor" style="background-color: pink;"></p>
+    <script>
+      let fruits = ['Apple', 'Mango', 'Orange'];
+      let cars = new Array('BMW','Audi','WagonR');     
+      let colors = new Array();
+      colors[0]='red';
+      colors[1]='green';
+      colors[2]='blue';
+
+
+      fruits.push("strawberry");
+      document.write("<br> length is " + fruits.length );
+      fruits.pop();
+
+      let text = "";
+      for (let x in fruits) { // in is index location
+          text += x + ' ' + fruits[x] + " ";
+      }
+      document.write('<br>' + text );
+      text = " ";
+      for (let x of fruits) { //of get the value.
+        text += x + " ";
+      }
+      document.getElementById("demo").innerHTML = 
+            " updating para - demo- " + text;
+      
+      function myFunction(item, index){
+        text += index + ": " + item + "<br>"; 
+      }
+      text = ' ';
+      cars.forEach(myFunction);
+      document.getElementById("mycar").innerHTML = 
+        " updating mycar " + text;
+
+      text = ' ';
+      for( let k = 0; k < colors.length; k ++ ){
+        text += colors[k] + " ";
+      }
+      document.getElementById("mycolor").innerHTML = 
+        " updating color " + text;
+
+    </script>
+  </body></html>

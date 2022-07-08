@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <script>
+      let person = {
+        firstName : 'John',
+        lastName : 'Kennedy'
+      };
+      console.log( person['firstName'] );
+      console.log( person ['lastName']);
+      document.write(" The name of person is " + 
+          person.firstName, person.lastName);
+
+      console.log( person.age);
+
+      person.salary = 3000;
+      
+      // in is used to verify if  the propery is assigned
+      // for the respective object.
+      // in operator check if a property exists in an object
+      console.log( 'age' in person );
+      console.log( 'firstName' in person );
+    </script>
+  </body>
+</html>

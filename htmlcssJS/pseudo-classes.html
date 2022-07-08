@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p:first-child {
+  color: blue;
+} 
+p:last-child {
+  background: #ff0000;
+}
+:nth-child(3) {
+  background: yellow;
+}
+h3:first-of-type {
+  background: gray;
+}
+h3:last-of-type {
+  background: pink;
+}
+h2:only-of-type {
+  background: black;
+  color: white;
+}
+</style>
+</head>
+<body>
+  <p>This is 1some text.</p>
+  <p>This is 2some text.</p>
+  <p>This is 3some text.</p>
+  <p>This is 4some text.</p>
+  <h3> example of first of type </h3>
+  <h3> example of middle of type </h3>
+  <h3> example of last of type </h3>
+  <h2> example for only of the type </h2>
+  <section>
+    <p> Inside section - only child </p>
+  </section>
+  <div>
+    <p>This is 1some text.</p>
+    <h3> example of first of type </h3>
+    <p>This is 2some text. this is the third child in the div</p>
+    <p>This is 3some text.</p>
+    <p>This is 4some text.</p>
+    <h3> example of last of type </h3>
+    <h2> example for only of the type </h2>
+    <p>This is 4some text. last</p>
+  </div>
+  <p>This is 4some text. last inside body</p>
+</body>
+</html>

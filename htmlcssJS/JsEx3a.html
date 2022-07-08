@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      let user = {
+        name: "Ajay",
+        age:23,
+        salary:5000,
+        dispme: function (){
+          document.write( "<br> written inside object " + 
+            user.name + " " + user.age + " " + user.salary );
+        },
+        greetName(){
+          document.write("<br> Greetings  "+ user.name );
+        }
+      };
+
+      let emp = {
+        empid: 123,
+        salary: 9700
+      };
+      function calculate(a ,  b ){
+        let c = a + b;
+        return c;
+      }
+      function multiply ( a, b=5,c=2,d=3){
+        let x = a * b * c * d ;
+        return x;
+      }
+      function calcCommission(){
+        let cm = this.salary * 0.2;
+          document.write( "<br> My commission is " +  cm );
+      }
+    </script>
+     
+    </head>
+    <body>
+      <h1> Javascript object example variable name, data, methods</h1>
+      <h2> How to write a normal function- implemented in head and
+        invoked from body tag
+      </h2>
+      <script>
+        let k = calculate(10, 30);
+        document.write("<br> " + k + " is the calculated value <br>");
+
+        k = multiply(10, 30,3,4);
+        document.write("<br> " + k + " is the multiply value <br>");
+
+        k = multiply(10);
+        document.write("<br> " + k + " is the multiply value <br>");
+
+        k = multiply();
+        document.write("<br> " + k + " is the multiply value <br>");
+      </script>
+      <h2> Methods invoked from the objects</h2>
+      <script>
+        user.dispme();
+        user.greetName();
+        user.myComm = calcCommission;
+        user.myComm();
+
+        document.write( "<br> empid - " + emp.empid + ' salary - ' + emp.salary + '<br>')
+        emp.myEmpCom = calcCommission;
+        emp.myEmpCom();
+      </script>
+    </body>
+      

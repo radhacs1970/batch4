@@ -1,0 +1,56 @@
+<html>
+  <body>
+    <h1> Loops </h1>
+    <h3>  while </h3>
+    <script>
+        let i = 2;
+        while (i) {
+          document.write ( "while " + i + "<br>"); 
+          i--;
+        }
+    </script>
+    <h3> do while </h3>
+    <script>
+      i = 0;
+      do {  
+          if ( i < 5 ) {
+            i++;
+            continue;
+          }
+          if ( i > 8 )
+            break;
+          document.write ( " do while loop "+ i + "<br>");
+          i++;
+          
+      }while ( i < 10);
+
+    </script>
+    <h3> for loop </h3>
+    <script>
+      for ( let i = 0; i < 3; i++){
+        document.write ( " For loop "+ i + "<br>");
+      }
+  </script>
+  <h3> switch statement</h3>
+  <script>
+    let day =2 ;
+    switch(day){
+          case 1:
+          document.write("<b> Monday </b>");
+          break;
+          case 2:
+          document.write("<b> Tuesday </b>");
+          break;
+          case 3:
+          document.write("<b> Wednesday </b>");
+          break;
+          case 4:
+          document.write("<b> Thursday </b>");
+          break;
+          default:
+          document.write("<b> Some day </b>");
+          break;
+    }
+  </script>
+  </body>
+</html>

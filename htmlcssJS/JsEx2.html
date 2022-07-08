@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> branching looping</title>
+</head>
+
+<body>
+  <h1> Java script,,,</h1>
+  <h3>
+    <script>
+      let age = prompt("Enter your age :");
+      if (age < 18) {
+        document.write(" Not able to avail Employement lesser age")
+      } else if (age > 55) {
+        document.write(" You are  a senior citizen, Not able employ");
+      } else {
+        document.write(" Can be employed...")
+      }
+      //  Conditional Operator ?
+      let allowed = (age > 18 && age < 55) ? " employed" : " Not Employed"
+      document.write("<br>" + allowed);
+    </script>
+  </h3>
+  <hr>
+<h3> Logical operators &&, || != </h3>
+<script> 
+let m1 = prompt("Enter mark1 :");
+let m2 = prompt("Enter mark2 :");
+let m3 = prompt("Enter mark3 :");
+let sum = +m1 + +m2 + +m3 ;
+
+alert ( sum );
+if( m1 > 75 && m2 > 75 && m3 > 75){
+  document.write("<br> Student is pass ");
+}
+if ( m1 < 75 || m2 < 75 || m3 < 75){
+  document.write("<br> Student is fail ");
+}
+if ( ! ( sum > 260) ){
+  document.write("<br> Student grade is Normal ");
+} else {
+  document.write("<br> Student grade is Outstanding ");
+}
+</script>
+  </h3>
+</body>
+
+</html>
